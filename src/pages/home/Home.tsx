@@ -1,16 +1,17 @@
-import React from "react";
 import "./Home.css";
-import homeLogo from '../../assets/homeLogo.jpg'
 
-function Home() {
+interface minhaProps{
+  title: string;
+  description: string;
+}
+
+function Home(props:minhaProps) {
   return (
     <>
-      <h1 className="titulo">Home</h1>
-
-      <img src={homeLogo} className="img" alt="Imagem tela inicial" />
+     <h2>{props.title}</h2>
+     <p>{props.description}</p>
     </>
   );
 }
-console.log(React.version);
 
 export default Home;
