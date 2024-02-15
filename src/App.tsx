@@ -1,9 +1,21 @@
-import React from "react";
-import Home from "./pages/home/Home";
+
 import "./App.css";
+import { useState } from "react";
 
 function App() {
-  return <Home />;
+const [valor, setValor] = useState(0);
+
+function handleClick(){
+  setValor(valor+1)
 }
-console.log(React.version);
+
+  return (
+  <div>
+    <h1>App</h1>
+    <p>O valor é: {valor}</p>
+    <button onClick={handleClick}>Adicionar 1</button>
+  </div>
+  )
+}
+
 export default App;
