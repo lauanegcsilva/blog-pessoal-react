@@ -1,26 +1,11 @@
-import { useNavigate, Link } from "react-router-dom";
-
-const Login = () => {
-  const navigate = useNavigate();
+function Login() {
   return (
-    <div>
-      <h2 className="text-slate-900 text-5xl   m-4">Login</h2>
-      <div>
-        <button
-          type="submit"
-          onClick={() => {
-            navigate("/home");
-          }}
-          className="hover:underline mx-4"
-        >
-          Login useNavigate
-        </button>
-        <Link to="/home" className="hover:underline  mx-4">
-          Login por Link
-        </Link>
+    <>
+      <div className="h-96 mb-96">
+        <h1 className="text-xl">Login</h1>
       </div>
-    </div>
+    </>
   );
-};
+}
 
 export default Login;
