@@ -1,12 +1,13 @@
-import Home from "./pages/home/Home";
 import "./App.css";
 
 function App() {
   return (
-  <div>
-   <Home/>
-  </div>
-  )
+    <>
+      <h1 className="text-3xl font-bold text-red-500 underline text-center">
+        Hello world!
+      </h1>
+    </>
+  );
 }
 
 export default App;
