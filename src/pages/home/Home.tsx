@@ -1,31 +1,17 @@
-import "./Home.css";
-import homeLogo from "../../assets/homeLogo.jpg";
+import { useState } from "react";
 
-function Home() {
+const Home = () => {
+  const [loggedIn, setLoggedIn] = useState(false);
+
   return (
-    <>
-      <div className="bg-indigo-900 flex justify-center">
-        <div className="container grid grid-cols-2 text-white">
-          <div className="flex flex-col gap-4 items-center justify-center py-4">
-            <h2 className="text-5xl font-bold">Seja bem vinde!</h2>
-            <p className="text-xl">Expresse aqui seus pensamentos e opniões</p>
-
-            <div className="flex justify-around gap-4">
-              
-              <button className="rounded bg-white text-blue-800 py-2 px-4">
-                Ver postagens
-              </button>
-              
-            </div>
-          </div>
-
-          <div className="flex justify-center ">
-            <img src={homeLogo} alt="" className="w-2/3" />
-          </div>
-        </div>
+    <div>
+      {loggedIn ? (
+        <h1>Bem-vindo de volta!</h1>
+      ) : (
+        <button onClick={() => setLoggedIn(true)}>Entrar</button>
+      )}
     </div>
-      </>
   );
-      }
+};
 
 export default Home;
