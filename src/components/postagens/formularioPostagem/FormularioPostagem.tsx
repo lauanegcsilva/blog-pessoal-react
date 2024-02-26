@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable prefer-const */
 import { ChangeEvent, useContext, useEffect, useState } from "react";
@@ -16,7 +15,7 @@ function FormularioPostagem() {
   const { usuario, handleLogout } = useContext(AuthContext);
   const token = usuario.token;
 
-  const[temas, setTemas] = useState<Tema[]>([]);
+  const [temas, setTemas] = useState<Tema[]>([]);
 
   const [tema, setTema] = useState<Tema>({
     id: 0,
