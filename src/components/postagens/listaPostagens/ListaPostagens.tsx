@@ -1,5 +1,5 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable prefer-const */
 import { useContext, useEffect, useState } from "react";
 import { Dna } from "react-loader-spinner";
@@ -42,6 +42,7 @@ function ListaPostagens() {
   useEffect(() => {
     buscarPostagens();
   }, [postagens.length]);
+
   return (
     <>
       {postagens.length === 0 && (
