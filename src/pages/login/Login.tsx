@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable prefer-const */
 import { ChangeEvent, useContext, useEffect, useState } from "react";
 import "./Login.css";
 
