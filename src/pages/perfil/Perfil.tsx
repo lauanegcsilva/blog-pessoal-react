@@ -31,7 +31,7 @@ export const Perfil = () => {
         alt={`Foto de perfil de ${usuario.nome}`}
         className="rounded-full w-56 mx-auto mt-[-8rem] border-8 border-white relative z-10"
       />
-      <div className="relative mt-[-6rem] h-72 flex flex-col bg-sky-500 text-white text-2xl items-center justify-center">
+      <div className="relative mt-[-6rem] h-72 flex flex-col bg-rose-300 text-white text-2xl items-center justify-center">
         <p>Nome: {usuario.nome} </p>
         <p>Email: {usuario.usuario}</p>
       </div>
